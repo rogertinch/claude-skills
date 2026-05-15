@@ -1,4 +1,4 @@
-# claude-skills
+# Claude Skills
 
 A collection of domain-expert skills for [Claude Code](https://claude.ai/code). Each skill loads a specialized knowledge base and reasoning framework into Claude, grounding its answers in a specific expert corpus rather than general training data.
 
@@ -24,6 +24,16 @@ A tabletop game design consultant built around Eric M. Lang's 28 design tenets. 
 
 ---
 
+### `laws-of-ux-design`
+
+A UX auditor grounded in all 30 Laws of UX (lawsofux.com). Assesses designs against specific laws, surfaces violations with severity ratings, and delivers actionable fixes — not generic advice. Where `ux-movement-design` prescribes patterns, this skill audits against named laws with explicit severity ratings.
+
+**Triggers on:** UI screenshots, wireframes, design descriptions, code for UX review, and any question like "what UX laws does this violate?", "is this good UX?", "review my design", or "how can I improve this interface?". Also triggers on navigation menus, forms, onboarding flows, dashboards, and checkout flows.
+
+**Reference material:** `laws-of-ux-design/references/` — `laws-summary.md` (all 30 laws with taglines and takeaways) and `laws-of-ux.json` (full data including origins, further reading, and related laws).
+
+---
+
 ## Structure
 
 Each skill follows the same layout:
@@ -34,7 +44,7 @@ Each skill follows the same layout:
   evals/
     evals.json      # Evaluation cases for the skill
   references/
-    *.md            # Domain reference material loaded on demand
+    *               # Domain reference material (markdown or JSON) loaded on demand
 ```
 
 ## License

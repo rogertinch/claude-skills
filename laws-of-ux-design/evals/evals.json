@@ -1,0 +1,44 @@
+{
+  "skill_name": "laws-of-ux-design",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm designing an e-commerce checkout flow and users keep abandoning it. Here's the structure: Step 1 is cart review, step 2 is account login or signup (required), step 3 is shipping address, step 4 is choosing a shipping method (5 options: standard, express, overnight, in-store pickup, same-day), step 5 is billing address (separate from shipping), step 6 is payment info, step 7 is order review, step 8 is confirmation. Each step is its own page with a back button. There's a progress bar at the top showing all 8 steps. Drop-off is worst at step 2 (the forced account creation) and step 4. Can you audit this against the Laws of UX?",
+      "expected_output": "Structured audit identifying violations (at minimum: Hick's Law or Choice Overload for 5 shipping options, Tesler's Law/Cognitive Load for 8-step flow, Cognitive Load or Tesler's Law for forced account creation), with severity ratings, specific fixes, and compliant elements (progress bar). Should use the defined output format with Violations, Cautions, and Strengths sections.",
+      "files": [],
+      "assertions": [
+        "Response includes Violations, Cautions, and Strengths sections (emoji formatting is optional)",
+        "Response flags forced account creation (step 2) as a violation, citing Cognitive Load or Tesler's Law",
+        "Response flags the 5 shipping options (step 4) citing Hick's Law or Choice Overload",
+        "Response recognizes the progress bar as a strength (Jakob's Law or Zeigarnik Effect)",
+        "Each violation includes a specific Fix recommendation, not just an observation"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Here's the top navigation for our B2B SaaS app. The nav bar across the top has 14 items: Home, Projects, Tasks, Calendar, Reports, Analytics, Team Members, Clients, Invoices, Settings, Notifications, Help Center, My Profile, and Billing. The current page is highlighted in blue. Clicking any item does a full page load. Sub-pages live in a left sidebar that only appears when you're in that section. Can you review this navigation design against the Laws of UX?",
+      "expected_output": "Audit identifying violations related to nav overload (Miller's Law, Hick's Law, Cognitive Load, Choice Overload), lack of grouping (Law of Proximity, Law of Common Region, Chunking), performance (Doherty Threshold for full page loads), and potentially Serial Position Effect for key action placement. Should be specific about the 14 items and provide concrete fixes.",
+      "files": [],
+      "assertions": [
+        "Response cites Miller's Law or Hick's Law in reference to the 14-item nav bar",
+        "Response recommends reducing or grouping nav items with a specific target count or grouping approach",
+        "Response flags full page loads as a performance concern, citing Doherty Threshold or Response Time",
+        "Response is specific about the 14-item count — not just 'too many items' in vague terms",
+        "Fix recommendations are concrete (e.g., 'consolidate into 5–7 top-level groups'), not generic"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I have a mobile signup form I'd like you to review from a UX laws perspective. It has 12 required fields stacked vertically: First Name, Last Name, Email, Phone Number, Password, Confirm Password, Date of Birth, Street Address, City, State, ZIP Code, Country. There's no inline validation — error messages only show up after you hit the Submit button at the very bottom. The placeholder text disappears when you start typing so you lose context for what the field is asking. Password requirements (must be 8+ chars, include a number and symbol) are only revealed after you submit and get an error. Fields are about 30px tall on mobile.",
+      "expected_output": "Audit identifying violations: Postel's Law (no input tolerance/feedback), Cognitive Load/Working Memory (12 fields, disappearing labels), Fitts's Law (30px tall touch targets too small), Parkinson's Law (excessive fields inflate task time), Tesler's Law (complexity pushed to user). Should note the password reveal timing as a Peak-End Rule issue. Fixes should be specific (inline validation, persistent labels, autofill, smaller required field set).",
+      "files": [],
+      "assertions": [
+        "Response cites Fitts's Law for the 30px touch targets and recommends a specific minimum size",
+        "Response flags disappearing placeholder text as a Cognitive Load or Working Memory violation",
+        "Response flags the post-submit error reveal (especially for password requirements) as a high-severity violation",
+        "Response recommends reducing the required field count, not just formatting improvements",
+        "Response includes at least one Strength or Not Assessed finding alongside the violations"
+      ]
+    }
+  ]
+}

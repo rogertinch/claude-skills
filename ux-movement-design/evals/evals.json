@@ -1,0 +1,35 @@
+{
+  "skill_name": "uxmovement",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm designing a SaaS app onboarding. Right now we have a signup form with 8 fields: first name, last name, email, confirm email, password, job title, company size, and company industry. Conversion is low. How should I fix this?",
+      "expected_output": "Identifies the key anti-patterns (split name, confirm email, too many upfront fields), recommends onboarding flow over signup form, explains the value-first principle, and gives concrete restructuring advice.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Should I use red for my delete button? Every design system I've seen uses red for destructive actions.",
+      "expected_output": "Recommends against red delete buttons, explains the cognitive mechanism (motor output, reduced self-control), recommends red warning icon + neutral button, with clear rationale.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "My dashboard has 12 widgets all the same size. Users say it feels overwhelming. What should I do?",
+      "expected_output": "Introduces three-tier hierarchy concept, explains equal-weight problem, recommends tiered sizing with 1 primary KPI, 3-4 supporting metrics with trends, and collapsed lower-priority widgets.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "For my form's date of birth field, I'm debating between three separate fields (month/day/year dropdowns) vs a single text field. Which is better and why?",
+      "expected_output": "Recommends single field with segmented input mask, explains why 3 dropdowns require 9+ interactions, why unconstrained text field causes parsing issues, and describes the input mask behavior.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "I have a data table with 15 columns and my users are complaining it's hard to use on their laptops. How should I approach this?",
+      "expected_output": "Covers column freezing, column hiding/reordering, priority display, and references specific articles about wide table reduction strategies.",
+      "files": []
+    }
+  ]
+}

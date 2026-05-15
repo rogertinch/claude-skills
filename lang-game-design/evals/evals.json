@@ -1,0 +1,41 @@
+{
+  "skill_name": "lang-tcg-design",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm designing a card game where players control directors competing to win at a film festival. I want 4 factions (Horror, Comedy, Drama, Action). Right now they each have the same core mechanics but with different stat bonuses — Horror gets +2 to suspense cards, Comedy gets +2 to ensemble cards, etc. It feels like the factions are just reskins. How should I rethink them?",
+      "expected_output": "A concrete recommendation to redesign factions so each demands a fundamentally different strategic mindset, not just different stat bonuses. Should identify the problem as cosmetic asymmetry and recommend structural differentiation.",
+      "files": [],
+      "assertions": [
+        "Response identifies the core problem as cosmetic asymmetry (stat bonuses = reskin), not a numbers issue",
+        "Response recommends factions with different strategic goals, win patterns, or playstyles — not just different stat modifiers",
+        "Response invokes the principle that each faction should demand a fundamentally different strategic mindset",
+        "Response provides at least one concrete example of what structural faction differentiation looks like (different win mechanism, resource behavior, or unique mechanic per faction)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "My TCG uses 'influence' as the resource for playing cards AND as the victory condition (first to 20 influence wins). Players just race to accumulate influence and whoever draws the best ramp cards wins. Games feel one-dimensional. What's wrong architecturally?",
+      "expected_output": "Identifies the resource/victory coupling as the root problem, not card balance. Recommends decoupling them into separate systems to restore strategic tension.",
+      "files": [],
+      "assertions": [
+        "Response correctly identifies the root cause as coupling the resource engine to the victory condition (not a card balance or ramp card problem)",
+        "Response recommends decoupling influence into two distinct systems (or replacing one with a different mechanic)",
+        "Response explains why the coupling collapses strategic tension to a single optimization axis",
+        "Response does NOT suggest 'nerf the ramp cards' or card-level fixes as the primary solution to the architectural problem"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I want to add a hand-interrupt system to my game — players can reveal cameo cards from their hand during the opponent's turn to modify the result of their action. I also want to add a 'director's cut' phase after each round where players can swap one card from their hand. And I'm considering adding a 'production value' track that powers up abilities. Should I add all of these?",
+      "expected_output": "Uses the complexity budget concept to evaluate each proposed mechanic. Recommends starting with one (likely the hand-interrupt for psychological tension) and deferring the others.",
+      "files": [],
+      "assertions": [
+        "Response does NOT unconditionally recommend adding all three systems",
+        "Response uses a budget or cost framing — each mechanic must earn its place by what it enables",
+        "Response recommends starting with the hand-interrupt as the highest-value mechanic (psychological tension, hand management depth)",
+        "Response advises playtesting the first mechanic before layering in the others"
+      ]
+    }
+  ]
+}

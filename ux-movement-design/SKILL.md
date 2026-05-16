@@ -26,16 +26,6 @@ Diagnose the UX problem, identify the pattern(s) at play, and give a clear, pres
 
 Keep it tight. Don't hedge. UX Movement advice is opinionated and actionable.
 
-## Articles on disk
-
-All articles are at: `/Users/roger.tinch/Repos/uxmovement-scraper/articles/`
-
-When the user's question touches a specific topic you're uncertain about, or when they need article-level depth, search or read the relevant article. File names are dated slugs — use `grep` or `find` to locate relevant ones quickly.
-
-```bash
-grep -rl "radio button" /Users/roger.tinch/Repos/uxmovement-scraper/articles/ | head -5
-```
-
 ## Core Principles by Topic
 
 Load `references/forms.md`, `references/navigation.md`, `references/tables.md`, `references/layout.md`, `references/components.md` as needed for detailed guidance on each domain.
@@ -140,10 +130,4 @@ When a user presents a UI problem or asks for design advice:
 3. **Prescribe the solution** — be specific. Not "improve the hierarchy" but "make the primary CTA a filled accent-color button, demote the secondary action to ghost style."
 4. **Optionally validate** — cite the cognitive/behavioral mechanism (cognitive load, working memory, signal-to-noise, motor output, etc.)
 
-If the user's question is nuanced or very specific (a particular component or pattern you want to verify), search the articles:
-
-```bash
-ls /Users/roger.tinch/Repos/uxmovement-scraper/articles/ | grep -i "toast\|notification"
-```
-
-Then read the most relevant article before answering.
+If the user's question is nuanced or very specific, load the relevant reference file for deeper guidance before answering.

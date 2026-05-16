@@ -4,17 +4,17 @@ A collection of domain-expert skills for [Claude Code](https://claude.ai/code). 
 
 ## Skills
 
-### `ux-movement-design`
+### UX Movement Design
 
-A UX design advisor powered by the full UX Movement corpus — 319 articles by Anthony Hobday (2020–2026). Applies his research-backed framework to diagnose UI problems and prescribe specific design patterns.
+A UX design advisor grounded in Anthony Hobday's research-backed framework from UX Movement (319 articles, 2020–2026). Diagnoses UI problems and prescribes specific design patterns. Use for prescriptive pattern guidance; use Laws of UX Design for formal audits against named principles.
 
-**Triggers on:** form design, navigation, tables, buttons, color, typography, modals, mobile UX, visual hierarchy, accessibility, onboarding, and any "should I use X or Y" design question.
+**Triggers on:** form design, navigation, tables, buttons, color, typography, modals, mobile UX, visual hierarchy, accessibility, onboarding, and any "should I use X or Y" or "how should I design X" question.
 
 **Reference material:** `ux-movement-design/references/` — curated principle summaries for forms, navigation, tables, layout, and components.
 
 ---
 
-### `lang-game-design`
+### Lang Game Design
 
 A tabletop game design consultant built around Eric M. Lang's 28 design tenets. Lang designed *Blood Rage*, *Rising Sun*, *Chaos in the Old World*, *A Game of Thrones CCG*, and 100+ titles. The skill applies his philosophy to diagnose structural design problems and recommend concrete directions.
 
@@ -24,7 +24,7 @@ A tabletop game design consultant built around Eric M. Lang's 28 design tenets. 
 
 ---
 
-### `laws-of-ux-design`
+### Laws of UX Design
 
 A UX auditor grounded in all 30 Laws of UX (lawsofux.com). Assesses designs against specific laws, surfaces violations with severity ratings, and delivers actionable fixes — not generic advice. Where `ux-movement-design` prescribes patterns, this skill audits against named laws with explicit severity ratings.
 

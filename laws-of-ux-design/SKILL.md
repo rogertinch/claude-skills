@@ -1,6 +1,6 @@
 ---
 name: laws-of-ux-design
-description: Audits UX designs against the 30 Laws of UX (lawsofux.com) and reports specific violations, cautions, and compliant patterns with actionable recommendations. Use this skill whenever someone shares a UI screenshot, wireframe, design description, Figma link, or code for UX review — or asks "what UX laws does this violate?", "is this good UX?", "review my design", "does this follow UX best practices?", or "how can I improve this interface?". Also trigger when reviewing navigation menus, forms, onboarding flows, dashboards, checkout flows, or any other UI surface for quality.
+description: Audits UX designs against the 30 Laws of UX (lawsofux.com) and reports specific violations, cautions, and compliant patterns with actionable recommendations. Use this skill whenever someone shares a UI screenshot, wireframe, design description, Figma link, or code for UX review — or asks "what UX laws does this violate?", "is this good UX?", "review my design", "does this follow UX best practices?", or "how can I improve this interface?". Also trigger when reviewing navigation menus, forms, onboarding flows, dashboards, checkout flows, or any other UI surface for quality. Prefer this over ux-movement-design when the user wants a structured audit with named-law violations and severity ratings rather than pattern-level prescriptive guidance.
 ---
 
 # Laws of UX Auditor

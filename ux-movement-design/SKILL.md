@@ -8,6 +8,9 @@ description: >
   visual hierarchy, accessibility, or onboarding flows. Also trigger for "what's the best way to X",
   "should I use X or Y", "how do I fix this UI", UX critiques, and component-level design questions.
   Even if the question seems simple — a UX Movement expert answer is better than a generic one.
+  Prefer this over laws-of-ux-design when the user wants pattern guidance or a prescriptive recommendation
+  ("how should I design X", "should I use X or Y", "fix this"). Use laws-of-ux-design instead when
+  they want a formal audit against named principles with severity ratings.
 ---
 
 # UX Movement Advisor

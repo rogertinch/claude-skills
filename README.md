@@ -12,6 +12,8 @@ A UX design advisor grounded in Anthony Hobday's research-backed framework from 
 
 **Reference material:** `ux-movement-design/references/` — curated principle summaries for forms, navigation, tables, layout, and components.
 
+**Invoke:** `/ux-movement-design`
+
 ---
 
 ### Lang Game Design
@@ -22,6 +24,8 @@ A tabletop game design consultant built around Eric M. Lang's 28 design tenets. 
 
 **Reference material:** `lang-game-design/references/tenets.md` — full quotes and explanations for all 28 tenets.
 
+**Invoke:** `/lang-game-design`
+
 ---
 
 ### Laws of UX Design
@@ -31,6 +35,8 @@ A UX auditor grounded in all 30 Laws of UX (lawsofux.com). Assesses designs agai
 **Triggers on:** UI screenshots, wireframes, design descriptions, code for UX review, and any question like "what UX laws does this violate?", "is this good UX?", "review my design", or "how can I improve this interface?". Also triggers on navigation menus, forms, onboarding flows, dashboards, and checkout flows.
 
 **Reference material:** `laws-of-ux-design/references/` — `laws-summary.md` (all 30 laws with taglines and takeaways) and `laws-of-ux.json` (full data including origins, further reading, and related laws).
+
+**Invoke:** `/laws-of-ux-design`
 
 ---
 

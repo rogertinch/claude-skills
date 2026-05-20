@@ -40,6 +40,18 @@ A UX auditor grounded in all 30 Laws of UX (lawsofux.com). Assesses designs agai
 
 ---
 
+### Writing Well
+
+A nonfiction prose editor grounded in William Zinsser's *On Writing Well*. Revises existing drafts or drafts new pieces from a brief — cutting clutter, strengthening verbs, fixing weak leads and soft endings, and enforcing unity of pronoun, tense, and mood. Skip for fiction, poetry, marketing copy, UI text, or removing AI writing patterns.
+
+**Triggers on:** essays, articles, blog posts, op-eds, criticism, memoir, business writing, science/tech explainers, longform reporting, personal essays — any nonfiction prose meant for a real reader.
+
+**Reference material:** none — skill is self-contained in `writing-well/SKILL.md`.
+
+**Invoke:** `/writing-well`
+
+---
+
 ## Structure
 
 Each skill follows the same layout:
@@ -49,8 +61,8 @@ Each skill follows the same layout:
   SKILL.md          # Skill definition: trigger description + system prompt
   evals/
     evals.json      # Evaluation cases for the skill
-  references/
-    *               # Domain reference material (markdown or JSON) loaded on demand
+  references/       # Optional — domain reference material (markdown or JSON) loaded on demand
+    *
 ```
 
 ## License
